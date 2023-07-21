@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employe Details Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="header1"></div>
+    <div class="header2"><a href="https://xd.adobe.com/view/1386b9ac-144c-4da1-95ca-c7dd9cc537e7-46d5/"><img
+                src="header.png" alt="header photo"></a></div>
+    <div class="form">
+        <h3>Employee Payroll Form</h3>
+        <div class="name">
+            <span>Name</span>
+            <input type="text" id="name" ondblclick="(()=>{alert('Hello');})()" />
+        </div>
+        <div class="row">
+            <span>Profile image</span>
+            <div class="position1">
+                <input type="radio" id="profile1" value="profile1.png" name="imageGroup">
+                <label for="profile1"><img src="profile1.png"></label>
+                <input type="radio" id="profile2" value="profile2.png" name="imageGroup">
+                <label for="profile2"><img src="profile2.png"></label>
+                <input type="radio" id="profile3" value="profile3.png" name="imageGroup">
+                <label for="profile3"><img src="profile3.png"></label>
+                <input type="radio" id="profile4" value="profile4.png" name="imageGroup">
+                <label for="profile4"><img src="profile4.png"></label>
+            </div>
+        </div>
+        <div class="row">
+            <span>Gender</span>
+            <div class="position1 position2">
+                <input type="radio" id="radio1" value="Male" name="radioGroup">
+                <label for="radio1" style="margin-left: 2%;">Male</label>
+                <input type="radio" id="radio2" value="Female" name="radioGroup" style="margin-left: 14%;">
+                <label for="radio2" style="margin-left: 2%;">Female</label>
+            </div>
+        </div>
+        <div class="row department">
+            <span>Department</span>
+            <div class="position1">
+                <input type="checkbox" id="department1" style="margin-left: 2%;" name="department" value="HR">
+                <label for="department1">HR</label>
+                <input type="checkbox" id="department2" name="department" value="Sales">
+                <label for="department2">Sales</label>
+                <input type="checkbox" id="department3" name="department" value="Finance">
+                <label for="department3">Finance</label>
+                <input type="checkbox" id="department4" name="department" value="Engineer">
+                <label for="department4">Engineer</label>
+                <input type="checkbox" id="department5" name="department" value="Others">
+                <label for="department5">Others</label>
+            </div>
+
+        </div>
+        <div class="salery row">
+            <span>Salary</span>
+            <div class="position1 select">
+                <input type="range" id="salary" min="3" max="50">
+                <div id="sliderValue"></div>
+            </div>
+        </div>
+        <div class="start-date row">
+            <span>Start Date</span>
+            <div class="position1 select1">
+                <select type="Day" id="day">
+                    <option value="Select day">Day</option>
+                </select>
+                <select type="Month" placeholder="profile2" id="month">
+                    <option value="Select month">Month</option>
+                </select>
+                <select type="Year" placeholder="profile2" id="year">
+                    <option value="Select year">Year</option>
+                </select>
+            </div>
+        </div>
+        <div class="name name1">
+            <span>Notes</span>
+            <textarea id="name1"></textarea>
+        </div>
+        <div class="row buttons">
+            <div class="position3"><a href="" class="cancel hover">cancel</a>
+            </div>
+            <div class="position4">
+                <a id="submitButton" class="cancel2 hover">Submit</a>
+                <a href="" class="cancel3 hover">Reset</a>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

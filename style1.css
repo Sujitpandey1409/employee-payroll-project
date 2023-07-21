@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgba(0, 0, 0, 0.662);
+}
+
+body {
+    background-color: #eafcfc;
+    height: 100vh;
+    width: 100vw;
+    z-index: -9999;
+}
+
+
+.header1 {
+    width: 100%;
+    height: 7%;
+    position: fixed;
+    background-color: #eafcfc;
+    z-index: 5;
+}
+
+.header2 {
+    width: 100%;
+    height: 21%;
+    background-color: white;
+}
+
+.header2 a {
+    position: relative;
+    background-image: url('header.png');
+    top: 47%;
+    left: 10%;
+    background-size: cover;
+}
+
+.header2 a img {
+    position: relative;
+    background-size: cover;
+}
+
+.header3{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 2% 10%;
+}
+#addButton{
+    background-color: rgb(102, 183, 22);
+    text-align: center;
+    padding: .5%;
+    color: white;
+    width: 15%;
+    height:40px;
+    border-radius: 5%;
+}
+.plus{
+    font-size: 150%;
+    color: white;
+    margin-left: -11%;
+    margin-right: 5%;
+}
+/* Employee detals Form */
+.container {
+    /* height: 120%; */
+    width: 80%;
+    background-color: white;
+    margin-left: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.4);
+}
+
+.head-div {
+    background-color: rgb(18, 85, 85);
+    width: 80.9%;
+    height: 6.5%;
+    position: absolute;
+    color: white;
+    z-index: 1;
+
+}
+
+#employeeTable {
+    text-align: center;
+    width: 100%;
+    z-index: 2;
+    margin-right: 500px;
+    border-collapse: collapse;
+}
+
+th, #employeeTableBody tr{
+    padding: 1.5% 4% 1.5% 4%;
+    text-align: center;
+    color: whitesmoke;
+    font-size: small;
+    height: 100%;
+}
+.row-even {
+    background-color: #f1f1f1;
+  }
+
+/* ... (Existing code) ... */
+
+/* Responsive styles for tablets (max-width: 768px) */
+@media screen and (max-width: 768px) {
+    .header2 a {
+      left: 5%;
+    }
+    .header2 a img {
+      width: 50px;
+      height: 50px;
+    }
+    .header3 {
+      width: 90%;
+      margin: 2% 5%;
+    }
+    #addButton {
+      width: 20%;
+      font-size: 90%;
+    }
+  }
+  
+  /* Responsive styles for mobile phones (max-width: 480px) */
+  @media screen and (max-width: 480px) {
+    .header2 a {
+      left: 5%;
+    }
+    .header2 a img {
+      width: 40px;
+      height: 40px;
+    }
+    .header3 {
+      flex-direction: column;
+      align-items: center;
+      width: 95%;
+      margin: 2% 2.5%;
+    }
+    #addButton {
+      width: 30%;
+      font-size: 80%;
+      margin-top: 10px;
+    }
+    .plus {
+      margin-left: -5%;
+    }
+    .container {
+      width: 95%;
+      margin-left: 2.5%;
+    }
+    .head-div {
+      width: 100%;
+    }
+    #employeeTable {
+      margin-right: 300px; /* Adjust this value based on the table content */
+    }
+  }
+  
+  /* ... (Any additional media queries for other screen sizes) ... */
+  
