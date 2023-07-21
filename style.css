@@ -144,8 +144,6 @@ select {
     border-radius: 4px;
   }
 
- /* Common styles for all screen sizes */
-/* ... (Existing code) ... */
 
 /* Responsive styles for tablets (max-width: 768px) */
 @media screen and (max-width: 768px) {
